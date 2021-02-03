@@ -1,11 +1,15 @@
+html {
+  height: 100%;
+  width: 100%;
+}
 body {
+  min-height: 100%;
   font-family: Roboto, sans-serif;
   background-color: #e5e5e5;
   background-image: url(pics/Rectangle.png);
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute !important;
-  width: 1440px;
+  
   margin: 0;
   padding: 0;
 }
@@ -27,6 +31,7 @@ h6 {
 }
 
 .Header {
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
