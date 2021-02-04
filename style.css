@@ -31,15 +31,11 @@ h6 {
 }
 
 .Header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  line-height: 24px;
-
-  align-items: center;
-  vertical-align: middle;
-  padding-top: 65px;
+  max-width: 1139px;
+  min-width: 768px;
+  margin: 0 auto;
+  padding: 27px;
+  overflow: hidden;
 }
 
 a,
@@ -47,10 +43,6 @@ a:hover {
   color: #ffffff;
   text-decoration: none;
   font-style: normal;
-}
-
-.logo-text {
-  font-size: 18px;
 }
 
 nav li {
@@ -62,9 +54,7 @@ nav li {
 }
 
 .main-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  float: right;
 }
 
 nav img,
@@ -81,7 +71,8 @@ label image {
 
 .logo {
   float: left;
-  padding-left: 139px;
+  font-size: 18px;
+  padding-top: 13px;
 }
 
 .navbar-toggle {
@@ -115,6 +106,11 @@ label image {
   width: 549px;
   padding-left: 75px;
   padding-top: 124px;
+  padding-bottom: 121px;
+}
+.intro_text {
+  width: 90%;
+  float: left;
 }
 
 .key-message__text {
@@ -171,6 +167,8 @@ button {
 .feachers {
   margin: 0px;
   font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .team {
   padding-top: 100px;
@@ -208,7 +206,9 @@ button {
   align-items: center;
   padding: 0px 10px;
 }
-
+.contact-form {
+  margin-bottom: 75px;
+}
 .form-text {
   text-align: center;
   width: 60%;
@@ -318,7 +318,11 @@ span {
 }
 
 #footer {
-  width: 1093px;
+  max-width: 1139px;
+  min-width: 768px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  vertical-align: middle;
 }
 #footer a {
   color: black;
@@ -333,10 +337,11 @@ span {
   color: black;
   font-size: 12px;
   display: inline-block;
-  padding-right: 33px;
+  padding-right: 30px;
 }
 .footer_text {
   float: right;
+  padding-top: 15px;
 }
 
 @media screen and (max-width: 1039px) {
@@ -355,16 +360,19 @@ span {
   @media screen and (max-width: 768px) {
     .Header {
       display: inline-block;
-      background-color: rgba(91, 91, 91, 0.5);
-      height: 70px;
+      background-color: rgba(91, 91, 91);
+      height: 67px;
       width: 768px;
       z-index: 1;
     }
     .white-content-block {
-      max-width: 99%;
+      max-width: 100%;
     }
     .form-name {
       display: flex;
+    }
+    .footer_text {
+      text-align: center;
     }
   }
   @media screen and (max-width: 480px) {
@@ -375,7 +383,7 @@ span {
       display: block;
     }
     .white-content-block {
-      width: 100%;
+      width: 480px;
     }
   }
   /*# sourceMappingURL=style.css.map */
