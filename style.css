@@ -94,6 +94,8 @@ label image {
 
 .white-content-block {
   max-width: 1380px;
+  min-height: 2045px;
+  max-height: 4442px;
 
   display: flex;
   justify-content: center;
@@ -189,6 +191,9 @@ button {
 .model_font-color {
   margin: 0px;
 }
+.team_link {
+  color: rgba(156, 39, 176, 1);
+}
 
 .social-links {
   text-align: center;
@@ -203,7 +208,7 @@ button {
 
 .form-text {
   text-align: center;
-  width: 753px;
+  width: 60%;
   padding-bottom: 40px;
   color: #999999;
   font-size: 18.2px;
@@ -348,7 +353,7 @@ span {
       z-index: 1;
     }
     .white-content-block {
-      max-width: 748px;
+      max-width: 99%;
     }
     .form-name {
       display: flex;
@@ -360,6 +365,9 @@ span {
     }
     .navbar-toggle {
       display: block;
+    }
+    .white-content-block {
+      width: 100%;
     }
   }
   /*# sourceMappingURL=style.css.map */
