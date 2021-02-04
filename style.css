@@ -110,8 +110,7 @@ label image {
   align-items: center;
   z-index: 1;
 }
-.team {
-}
+
 .key-message {
   width: 549px;
   padding-left: 75px;
@@ -173,6 +172,9 @@ button {
   margin: 0px;
   font-size: 20px;
 }
+.team {
+  padding-top: 100px;
+}
 .text-block3 {
   color: #3c4858;
   text-align: center;
@@ -182,6 +184,7 @@ button {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(auto-fill, 350px);
+  grid-gap: 100px;
   text-align: center;
   justify-items: center;
   justify-content: space-around;
@@ -344,6 +347,11 @@ span {
   .white-content-block {
     max-width: 95%;
   }
+  .team {
+    padding-top: 600px;
+    padding-bottom: 50px;
+  }
+
   @media screen and (max-width: 768px) {
     .Header {
       display: inline-block;
