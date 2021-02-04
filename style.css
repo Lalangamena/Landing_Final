@@ -93,10 +93,8 @@ label image {
 }
 
 .white-content-block {
-  width: 1380px;
-  min-width: 405px;
-  min-height: 2045px;
-  max-height: 4442px;
+  max-width: 1380px;
+
   display: flex;
   justify-content: center;
   background-color: #ffffff;
@@ -108,8 +106,10 @@ label image {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
-
+.team {
+}
 .key-message {
   width: 549px;
   padding-left: 75px;
@@ -144,7 +144,7 @@ button {
 }
 
 .text-block {
-  width: 90%;
+  width: 80%;
   padding: 0 323px;
 }
 
@@ -157,13 +157,15 @@ button {
 
 .feachers_1 {
   display: grid;
-  grid-template-columns: repeat(3, 328px);
+  grid-template-columns: repeat(auto-fill, 328px);
+  grid-gap: 100px;
   width: 100%;
   height: 204px;
   justify-items: center;
   justify-content: space-around;
-  padding: 68px 104px 200px;
+  padding: 68px 4px;
   text-align: center;
+  z-index: 10;
 }
 .feachers {
   margin: 0px;
@@ -177,11 +179,12 @@ button {
 .team-description {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(auto-fill, 350px);
   text-align: center;
   justify-items: center;
   justify-content: space-around;
   padding-bottom: 183px;
+  z-index: 100;
 }
 .model_font-color {
   margin: 0px;
@@ -333,25 +336,31 @@ span {
     display: grid;
     grid-template-columns: repeat(1, 358px);
   }
-}
-@media screen and (max-width: 768px) {
-  .Header {
-    display: inline;
-    background-color: rgba(91, 91, 91, 0.5);
-    height: 70px;
-    width: 786px;
-    z-index: 1;
-  }
   .white-content-block {
-    width: 748px;
+    max-width: 95%;
   }
+  @media screen and (max-width: 768px) {
+    .Header {
+      display: inline-block;
+      background-color: rgba(91, 91, 91, 0.5);
+      height: 70px;
+      width: 768px;
+      z-index: 1;
+    }
+    .white-content-block {
+      max-width: 748px;
+    }
+    .form-name {
+      display: flex;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .main-menu {
+      display: none;
+    }
+    .navbar-toggle {
+      display: block;
+    }
+  }
+  /*# sourceMappingURL=style.css.map */
 }
-@media screen and (max-width: 480px) {
-  .main-menu {
-    display: none;
-  }
-  .navbar-toggle {
-    display: block;
-  }
-}
-/*# sourceMappingURL=style.css.map */
