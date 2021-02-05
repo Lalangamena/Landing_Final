@@ -38,13 +38,16 @@ h6 {
   overflow: hidden;
 }
 
-a,
-a:hover {
+a {
   color: #ffffff;
   text-decoration: none;
   font-style: normal;
 }
-
+a:hover {
+  color: #7a7585;
+  background: darkgrey;
+  border-radius: 6px;
+}
 nav li {
   display: inline-block;
   list-style-type: none;
